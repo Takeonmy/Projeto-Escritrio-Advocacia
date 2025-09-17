@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #d3eafa;
+}
+
+/* Menu Lateral */
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 40px 0;
+    box-shadow: 3px 0 0 #ffffff65;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1000;
+}
+
+nav.menu-lateral.expandir {
+    width: 250px;
+}
+
+.btn-expandir {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-expandir > i {
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .3s;
+}
+
+ul li.ativo {
+    background-color: #d3eafa;
+}
+
+ul li.item-menu:hover {
+    background-color: #d3eafa;
+}
+
+ul li.item-menu a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 40px;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 70px;
+    transition: 1s;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 80px; /* Ajuste conforme a largura do menu lateral */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    padding: 14px 20px;
+}
+
+.navbar a {
+    color: rgb(88, 88, 88);
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #3537c254;
+    border-radius: 5px;
+}
+
+/* Container do Conteúdo */
+.content {
+    margin-left: 280px; /* Ajuste conforme a largura do menu lateral e da navbar */
+    padding: 20px;
+}
+
+/* Seções */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+
+.bibi-person-circle{
+    color: black
+}
+
+/* Container para alinhamento */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha as divs no centro horizontalmente */
+    width: 100%;
+    padding: 20px; /* Adiciona um padding ao container */
+}
+
+
+
+.user {
+    background-color: #d3eafa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 90%; /* Largura da div user, igual à div dashboard */
+    max-width: 1200px; /* Limita a largura máxima da div */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.user-title{
+    background-color: #e3f2fd;
+    padding: 0.010px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 1200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1px;  
+}
+
+.user:hover {
+    background-color: #bbdefb;
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+}
+
+
+#icon1{
+    margin: 10px ;
+    font-size: 35px;
+    color: #0b73c9;
+    display: flex;
+    align-items: center;
+}
+
+#titulo{
+    margin-right: 15px;
+    font-size: 35px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.board {
+    background-color: #fed7e4;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 90%; /* Largura da div user, igual à div dashboard */
+    max-width: 1200px; /* Limita a largura máxima da div */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.board:hover{
+    background-color: #fec1d6;
+    transform: translateY(-5px); 
+}
+
+.dashboard {
+    background-color: #fee2ec;
+    padding: 0.010px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 1200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1px;  
+}
+
+.dashboard-content p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+#icon2{
+    margin: 10px ;
+    font-size: 35px;
+    color: #99234e;
+    display: flex;
+    align-items: center;
+}
+
+
+.historico_registro {
+    background-color: #d6fbd9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 90%; 
+    max-width: 1200px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+    margin-top: 30px;
+}
+
+.historico_registro:hover{
+    background-color: #bef9c3;
+    transform: translateY(-5px); 
+}
+
+/* Estilo para a div .historico */
+.historico {
+    background-color: #e8f5e9;
+    padding: 0.010px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 1200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1px;  
+}
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+button.delete {
+    background-color: #f44336; /* Vermelho */
+}
+
+button.delete:hover {
+    background-color: #e53935;
+}
+
+/* Estilo dos detalhes do cliente */
+.client-details {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-details h2 {
+    margin-top: 0;
+}
+
+.client-details p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.client-details strong {
+    color: #333;
+}
+/* Estilos para os botões */
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #3e8e41;
+}
+
+.actions button {
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #2196F3; /* Azul */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #0b7dda;
+}
+
+.actions button:active {
+    background-color: #0a5bb5;
+}
+
+/* Estilos para a linha de detalhes */
+.details-row {
+    background-color: #f9f9f9;
+}
+
+.details-row td {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}

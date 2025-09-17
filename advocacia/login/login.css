@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('img/titular.webp') no-repeat center center fixed;
+    background-size: 100% 100%; /* Garante tamanho e proporção da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /*Manter tudo bem posicionado, não altera os outros posicionamentos */
+}
+
+.text-top-right { /*PALAVRA NO CANTO SUPERIOR DIREITO */
+    position: absolute;
+    top: 10px; /* Ajuste a distância do topo */
+    right: 10px; /* Ajuste a distância da borda direita */
+    font-size: 16px; /* Tamanho da fonte */
+    color: rgba(0, 0, 0, 0.918); /* Cor do texto */
+    background-color: rgba(87, 171, 226, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 7px; /* Borda arredondada opcional */
+}
+
+.page-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px; /* Espaço entre o título e a caixa de login */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Cor branca com 80% de opacidade */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Aumenta a largura da caixa */
+    height: 400px; /* Aumenta a altura da caixa */
+    margin: 0 auto;
+}
+
+.login-container h2 {
+    font-family: 'Montserrat', sans-serif; /* Usa a fonte Montserrat */
+    font-size: 28px; /* Tamanho maior para um destaque moderno */
+    font-weight: 540; /* Peso da fonte para semi-negrito */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Aumenta o padding para mais conforto */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding e border não aumentem a largura total */
+}
+
+.login-container button {
+    width: 50%;
+    padding: 12px; /* Aumenta o padding para mais conforto */
+    background-color: #3537c2;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao botão */
+}
+
+.login-container button:hover {
+    background-color: #220e6d;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.login-container button:active {
+    transform: scale(0.95); /* Efeito de contração ao clicar */
+}
+
+.login-container .form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20x; /* Espaço abaixo das opções */
+}
+
+.login-container .form-options label {
+    font-size: 14px;
+}
+
+.login-container .form-options .forgot-password {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container .form-options .forgot-password:hover {
+    text-decoration: underline;
+}
